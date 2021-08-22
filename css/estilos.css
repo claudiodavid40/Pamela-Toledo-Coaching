@@ -1,0 +1,542 @@
+@font-face {
+    font-family: 'antipasto';
+    src: url(../assets/Fonts/Anti-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: 800; }
+  
+  @font-face {
+    font-family: 'antipasto';
+    src: url(../assets/Fonts/Anti-Bold.ttf);
+    font-style: normal;
+    font-weight: 700; }
+  
+  @font-face {
+    font-family: 'antipasto';
+    src: url(../assets/Fonts/Anti-Medium.ttf);
+    font-style: normal;
+    font-weight: 400; }
+  
+  @font-face {
+    font-family: 'antipasto';
+    src: url(../assets/Fonts/Anti-Regular.ttf);
+    font-style: normal;
+    font-weight: 300; }
+  
+  @font-face {
+    font-family: 'antipasto';
+    src: url(../assets/Fonts/Anti-Light.ttf);
+    font-style: normal;
+    font-weight: 200; }
+
+    @font-face {
+        font-family: 'antipasto';
+        src: url(../assets/Fonts/Anti-Thin.ttf);
+        font-style: normal;
+        font-weight: 100; }
+
+/*         PARA USAR ESTA FUENTE DESCARGADA EN CUALQUIER ETIQUETA O CLASE O ID SE HACE DE LA SIGUIENTE MANERA:
+        p{
+            font-family: 'antipasto';
+            font-weight: 200; podes elgir 100,200,300,400,700,800 como está arriba
+        } */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* TODOS LOS TITULOS LLEVAN ESTA TIPOGRAFIA POR ENDE CADA VEZ QUE HAYA UN TITULO PONERLE LA CLASE "TITULO" ASI AUTOMATICAMENTE TOMA ESA TIPOGRAFIA */
+
+.titulo{
+    font-family: 'Alata', sans-serif;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+/* TIPOGRFIA ROBOTO SOLO PARA EL MENU DE NAVEGACION */
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.athitiRegular{
+    font-family: 'Athiti', sans-serif;
+    font-weight: 400;
+}
+
+.athitiLight{
+    font-family: 'Athiti', sans-serif;
+    font-weight: 300;
+}
+
+.baskerville{
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+}
+
+/* NAVBAR */
+.barra{
+    z-index: 100;
+    padding: 10px 10px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 0px 5px 2px rgba(121, 121, 121, 0.269);
+    background-color: white;
+}
+
+nav .enlaceLogo img{
+    width: 180px;
+    margin-left: 200px;
+}
+
+nav #navbarSupportedContent ul li .nav-link{
+    color: rgb(0, 0, 0);
+    margin: 0px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav #navbarSupportedContent ul li .nav-link:hover{
+    color: #722F72;
+    margin: 0px 10px;
+}
+
+nav .navbar-toggler{
+    border: none;
+}
+
+nav .navbar-toggler:focus{
+    border: none;
+    outline: none;
+}
+
+#barraUno{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
+
+}
+
+#barraDos{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
+}
+
+#barraTres{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
+}
+
+
+
+
+
+/* BANNER */
+#banner{
+    height: 100vh;
+    background-image: url('../assets/bannerModificado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#banner h1{
+    color: white;
+    margin-left: 50px;
+}
+.tituloPrincipal{
+    margin-top: 5em;
+/* position: relative;
+left: 0px;
+right: 57.45%;
+bottom: 10em;
+
+font-family: Alata;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 66px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#imgPrincipal{
+position: absolute;
+left: 0px;
+transform: matrix(1, 0, 0, 1, 0, 0);
+*/} 
+
+
+
+/* SOBRE MI */
+#sobreMi{
+    background-color: #FAFBF3;
+}
+
+#sobreMi h2{
+    color: #8B4F8B;
+}
+
+.rectanguloSobreMi{
+    font-family: 'antipasto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    margin: 2em;
+    padding: 2em;
+    background: rgba(196, 167, 196, 0.5);
+    box-shadow: 4px 4px 8px rgba(114, 47, 114, 0.1);
+    border-radius: 25px 0px
+
+}
+
+#sobreMi .imgSobreMi{
+    border-radius: 100%;
+    box-shadow: 4px 3px 8px 2px #8b4f8b3a ;
+}
+
+/* SERVICIOS */
+#servicios{
+    background-color: #C4A7C4;
+}
+
+#servicios h2{
+    color: white;
+}
+
+#servicios .serviciosImg{
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(79, 79, 79, 0.42);
+    margin-bottom: 30px;
+}
+
+#servicios .cta{
+    border: 2px solid #722F72;
+    border-radius: 25px 0px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: white;
+    background-color: #722F72 ;
+    transition: all 0.2s ease-in-out;
+}
+
+#servicios .cta:hover{
+    background-color: #C4A7C4;
+    color: #722F72;
+}
+
+
+/* METODOLOGIA */
+#metodologia{
+    background-color: #FAFBF3;
+}
+
+#metodologia h2{
+    color:#722F72 ;
+}
+
+
+.contenedorMetodologia{
+    background-color: rgba(196, 167, 196, 0.5);
+    box-shadow: 8px 8px 19px rgba(90, 96, 62, 0.25);
+    border-radius: 25px 0px;
+}
+
+.parrafoMetodologia{
+    font-size: 20px;
+    line-height: 40px;
+    font-style: italic;
+    padding: 30px 90px;
+}
+
+.contenedorParrafo{
+    line-height: 35px;
+    margin: 0px 0px;
+}
+
+.contenedorParrafo p{
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+/* TESTIMONIOS */
+#testimonios{
+    background-color: #C2CA9A;
+    box-shadow: inset 0px 1px 6px 0px #5a603e62;
+}
+
+#testimonios h2{
+    color:white ;
+}
+
+.contenedorImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.contenedorImg img{
+    width: 200px;
+}
+
+.contenedorParrafoTestimonios{
+    background-color: #F4F7E4;
+    border-radius: 25px 0px;
+    margin-bottom: 30px;
+}
+
+.contenedorParrafoTestimonios p{
+    padding: 10px 20px;
+    margin: 0px 0px;
+    font-size: 17px;
+    box-shadow: 8px 8px 19px rgba(90, 96, 62, 0.25);
+    border-radius: 25px 0px;
+}
+
+.filaTestUno{
+    margin-right: 200px;
+}
+
+.filaTestDos{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.filaTestTres{
+    margin-right: 200px;
+}
+
+/* CONTACTO */
+#contacto{
+    background-color: #722F72;
+}
+
+#contacto h2{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    margin: 10px 0px;
+    border-radius: 24px;
+    padding: 10px 12px;
+    border: none;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+textarea{
+    border: none;
+    padding: 10px 12px;
+    border-radius: 24px;
+    resize: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.contenedorBoton{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.boton{
+    border-radius: 24px;
+    width: 30%;
+    background-color: #AF86AF;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton:hover{
+    color: #722F72;
+    
+}
+
+.contenedorInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contenedorInfo p{
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.contenedorLogo{
+    border-radius: 100%;
+    background-color: #C4A7C4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contenedorLogo i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contenedorLogo i:hover{
+    color: #722F72;
+}
+
+/* BOTON WHATSAPP */
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:20px;
+    background-color: #00BB2D;
+    color: white;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    transition: all 0.2s ease;
+    -webkit-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -7px rgba(0,0,0,0.75);
+}
+
+.whatsapp:hover{
+    background-color: white;
+    color: #00BB2D;
+    transition: all 0.2s ease;
+}
+
+
+  
+.what{
+    margin-top:10px;
+    font-size: 2.5rem;
+}
+
+
+/* MEDIA QUERIES TABLET */
+@media only screen and (max-width: 768px){
+    nav .enlaceLogo img{
+        width: 140px;
+        margin-left: 0px;
+    }
+
+    .parrafoMetodologia{
+        line-height: 35px;
+        padding: 20px 12px;
+    }
+
+    .contenedorParrafo{
+        line-height: 35px;
+        margin: 30px 20px;
+    }
+
+    .contenedorImg img{
+        width: 150px;
+    }
+
+    .contenedorParrafoTestimonios{
+        margin-top: 20px;
+    }
+
+    .filaTestUno{
+        margin-right: 0px;
+    }
+    
+    .filaTestDos{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .filaTestTres{
+        margin-right: 0px;
+    }
+
+    .boton{
+        width: 45%;
+    }
+
+    .rectanguloSobreMi{
+        margin: 0em;
+        padding: 1em;
+    }
+
+}
+/* MEDIA QUERIES MOBILE */
+@media only screen and (max-width: 580px){
+    #banner h1{
+        margin: 0px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #banner{
+        height: 100vh;
+        background-image: url('../assets/bannerModificado.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 0%;
+    }
+
+}
